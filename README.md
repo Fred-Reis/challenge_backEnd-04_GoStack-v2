@@ -192,7 +192,7 @@ yarn dev:server
 
 > Recommend using [Insomnia](https://insomnia.rest/download/) to test routes
 
-#### [For more details on the list of requirements and tests for this challenge](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-fundamentos-nodejs)
+#### [For more details on the list of requirements and tests for this challenge.](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-fundamentos-nodejs)
 
 😃 Now run this project and...
 **BE HAPPY**.
