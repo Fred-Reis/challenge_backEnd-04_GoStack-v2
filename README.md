@@ -93,7 +93,7 @@ Some concepts of SOLID and software architecture were applied.
 In this project, two routes were created divided into a project structure that
 removes all liability from the route file, such as business rules and data validation. A structure with models, repositories and services was used to divide the tasks.
 
-Estrutura de pastas:
+Folder structure:
 
 ![estrutura](src/assets/readme/estrutura.png)
 
