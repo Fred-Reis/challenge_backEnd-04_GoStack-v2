@@ -151,6 +151,8 @@ Folder structure:
 ## ⚙️ Techs:
 
 - **NodeJS**;
+- EsLint;
+- Prettier;
 - Express;
 - Nodemon;
 - Yarn;
