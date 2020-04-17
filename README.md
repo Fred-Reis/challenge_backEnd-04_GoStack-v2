@@ -61,6 +61,9 @@
   <a href="#-about-challenge">
     <img src="https://img.shields.io/badge/About_Challenge-a5a5a5"/>
   </a>&nbsp;&nbsp;
+  <a href="#-archtecture">
+    <img src="https://img.shields.io/badge/Archtecture-a5a5a5"/>
+  </a>&nbsp;&nbsp;
   <a href="#-functionalities">
     <img src="https://img.shields.io/badge/Functionalities-a5a5a5"/>
   </a>&nbsp;&nbsp;
@@ -89,20 +92,61 @@ Some concepts of SOLID and software architecture were applied.
 
 In this project, two routes were created divided into a project structure that
 removes all liability from the route file, such as business rules and data validation. A structure with models, repositories and services was used to divide the tasks.
-Estrutura de pastas:
 
-<!-- <img src="src/assets/readme/estrutura.png"/> -->
+Estrutura de pastas:
 
 ![estrutura](src/assets/readme/estrutura.png)
 
 ## 🔥 Functionalities:
 
-- `POST /repositories` => Create a new repositorie.
-- `GET /repositories` => List all repositories.
-- `PUT /repositories/:id` => Updates some parameters of the repository with the same ID received by **request params**.
-- `DELETE /repositories/:id` => Delete the repositorie with the same ID received by **request params**.
-- `POST /repositories/:id/like` => Increase one more "like" in the repository with the same ID received by **request params**,
-  whenever this route is called.
+- `POST /transactions`: This route receive `title`, `value` e `type` on request body into a object format like this:
+
+```js
+{
+  "id": "uuid",
+  "title": "Salário",
+  "value": 3000,
+  "type": "income"
+}
+```
+
+- `GET /transactions`: This route should return a list of all the transactions you have registered so far, together with the sum of the entries, withdrawals and total credit. This route must return an object with the following format:
+
+```js
+{
+  "transactions": [
+    {
+      "id": "uuid",
+      "title": "Salário",
+      "value": 4000,
+      "type": "income"
+    },
+    {
+      "id": "uuid",
+      "title": "Freela",
+      "value": 2000,
+      "type": "income"
+    },
+    {
+      "id": "uuid",
+      "title": "Pagamento da fatura",
+      "value": 4000,
+      "type": "outcome"
+    },
+    {
+      "id": "uuid",
+      "title": "Cadeira Gamer",
+      "value": 1200,
+      "type": "outcome"
+    }
+  ],
+  "balance": {
+    "income": 6000,
+    "outcome": 5200,
+    "total": 800
+  }
+}
+```
 
 ## ⚙️ Techs:
 
@@ -145,6 +189,8 @@ yarn dev:server
 ```
 
 > Recommend using [Insomnia](https://insomnia.rest/download/) to test routes
+
+##### [For more details about request list and tests](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-fundamentos-nodejs)
 
 😃 Now run this project and...
 **BE HAPPY**.
