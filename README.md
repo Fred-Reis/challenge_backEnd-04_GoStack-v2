@@ -99,7 +99,7 @@ Folder structure:
 
 ## 🔥 Functionalities:
 
-- `POST /transactions`: This route receive `title`, `value` e `type` on request body into a object format like this:
+- `POST /transactions`: This route receive `title`, `value` and `type` on request body into a object format like this:
 
 ```js
 {
@@ -172,16 +172,10 @@ into your folder:
 $ git clone https://github.com/Fred-Reis/challenge_backEnd-04_GoStack-v2
 ```
 
-Into repo folder, to intall `Node_Modules` run:
+Into repo folder, to install `Node_Modules` run:
 
 ```bash
 yarn
-```
-
-To link with IOS:
-
-```bash
-pod install
 ```
 
 And to start the server:
