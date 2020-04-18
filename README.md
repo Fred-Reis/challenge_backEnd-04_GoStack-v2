@@ -103,7 +103,6 @@ Folder structure:
 
 ```js
 {
-  "id": "uuid",
   "title": "Salário",
   "value": 3000,
   "type": "income"
