@@ -61,8 +61,8 @@
   <a href="#-about-challenge">
     <img src="https://img.shields.io/badge/About_Challenge-a5a5a5"/>
   </a>&nbsp;&nbsp;
-  <a href="#-archtecture">
-    <img src="https://img.shields.io/badge/Archtecture-a5a5a5"/>
+  <a href="#-architecture">
+    <img src="https://img.shields.io/badge/Architecture-a5a5a5"/>
   </a>&nbsp;&nbsp;
   <a href="#-functionalities">
     <img src="https://img.shields.io/badge/Functionalities-a5a5a5"/>
@@ -88,12 +88,12 @@ In this challenge, construction began on the API that will serve as a front-end 
 
 Some concepts of SOLID and software architecture were applied.
 
-## 📐 Archtecture:
+## 📐 Architecture:
 
 In this project, two routes were created divided into a project structure that
 removes all liability from the route file, such as business rules and data validation. A structure with models, repositories and services was used to divide the tasks.
 
-Folder structure:
+Folder's structure:
 
 ![estrutura](src/assets/readme/estrutura.png)
 
