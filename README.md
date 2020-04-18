@@ -99,10 +99,11 @@ Folder structure:
 
 ## 🔥 Functionalities:
 
-- `POST /transactions`: This route receive `title`, `value` and `type` on request body into a object format like this:
+- `POST /transactions`: This route receive `title`, `value` and `type` in the request body, being the `type` of transaction, which must be "income" for incoming (deposits) and "outcome" for outgoing (withdrawal). When registering a new transaction, it must be stored inside an object with the format as follows:
 
 ```js
 {
+  "id": "uuid",
   "title": "Salário",
   "value": 3000,
   "type": "income"
